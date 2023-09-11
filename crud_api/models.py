@@ -1,4 +1,38 @@
 from django.db import models
 
+
 # Create your models here.
-class crud_api(models.Model):
+class Crud_api(models.Model):
+    Country = models.CharField
+    Coffee_type = models.CharField(max_length=250, verbose_name="Coffee type")
+    year9091 = models.PositiveBigIntegerField(null=True, verbose_name="1990/91")
+    year9192 = models.PositiveBigIntegerField(null=True, verbose_name="1991/92")
+    year9293 = models.PositiveBigIntegerField(null=True, verbose_name="1992/93")
+    year9394 = models.PositiveBigIntegerField(null=True, verbose_name="1993/94")
+    year9495 = models.PositiveBigIntegerField(null=True, verbose_name="1994/95")
+    year9596 = models.PositiveBigIntegerField(null=True, verbose_name="1995/96")
+    year9697 = models.PositiveBigIntegerField(null=True, verbose_name="1996/97")
+    year9798 = models.PositiveBigIntegerField(null=True, verbose_name="1997/98")
+    year9899 = models.PositiveBigIntegerField(null=True, verbose_name="1998/99")
+    year9900 = models.PositiveBigIntegerField(null=True, verbose_name="1999/00")
+    year0001 = models.PositiveBigIntegerField(null=True, verbose_name="2000/01")
+    year0102 = models.PositiveBigIntegerField(null=True, verbose_name="2001/02")
+    year0203 = models.PositiveBigIntegerField(null=True, verbose_name="2002/03")
+    year0304 = models.PositiveBigIntegerField(null=True, verbose_name="2003/04")
+    year0405 = models.PositiveBigIntegerField(null=True, verbose_name="2004/05")
+    year0506 = models.PositiveBigIntegerField(null=True, verbose_name="2005/06")
+    year0607 = models.PositiveBigIntegerField(null=True, verbose_name="2006/07")
+    year0708 = models.PositiveBigIntegerField(null=True, verbose_name="2007/08")
+    year0809 = models.PositiveBigIntegerField(null=True, verbose_name="2008/09")
+    year0910 = models.PositiveBigIntegerField(null=True, verbose_name="2009/10")
+    year1011 = models.PositiveBigIntegerField(null=True, verbose_name="2010/11")
+    year1112 = models.PositiveBigIntegerField(null=True, verbose_name="2011/12")
+    year1213 = models.PositiveBigIntegerField(null=True, verbose_name="2012/13")
+    year1314 = models.PositiveBigIntegerField(null=True, verbose_name="2013/14")
+    year1415 = models.PositiveBigIntegerField(null=True, verbose_name="2014/15")
+    year1516 = models.PositiveBigIntegerField(null=True, verbose_name="2015/16")
+    year1617 = models.PositiveBigIntegerField(null=True, verbose_name="2016/17")
+    year1718 = models.PositiveBigIntegerField(null=True, verbose_name="2017/18")
+    year1819 = models.PositiveBigIntegerField(null=True, verbose_name="2018/19")
+    year1920 = models.PositiveBigIntegerField(null=True, verbose_name="2019/20")
+    Total_domestic_consumption = models.PositiveBigIntegerField(null=True)

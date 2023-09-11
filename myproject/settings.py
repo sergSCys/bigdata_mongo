@@ -87,9 +87,7 @@ WSGI_APPLICATION = "myproject.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'coffee',
-        'HOST': '127.0.0.1',
-        'PORT': 27017,
+        'NAME': 'mongodb+srv://---@cluster0.5v5j9qc.mongodb.net/?retryWrites=true&w=majority',
     }
 }
 

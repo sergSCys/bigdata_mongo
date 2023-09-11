@@ -21,4 +21,5 @@ pip install djongo
 -- Install du CORS 
  pip install django-cors-headers
 
--- 
+-- Apres la creation du Modele:
+python manage.py makemigrations crud_api
