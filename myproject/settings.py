@@ -84,13 +84,18 @@ WSGI_APPLICATION = "myproject.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
+DATABASE = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'mongodb+srv://---@cluster0.5v5j9qc.mongodb.net/?retryWrites=true&w=majority',
+        'CLIENT': {
+           'name': 'mycoffee',
+           'host': 'mongodb+srv://admin1:--@cluster0.5v5j9qc.mongodb.net/?retryWrites=true&w=majority',
+           'username': 'admin',
+           'password': '',
+           'authMechanism': 'SCRAM-SHA-1',
+        },
     }
 }
-
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
