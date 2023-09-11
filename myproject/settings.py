@@ -37,6 +37,12 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+# Django REST framework
+    'rest_framework',
+# Tutorials application
+    'crud_api.apps.CrudApiConfig',
+# CORS
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -51,6 +57,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "myproject.urls"
 
+## Cors origin whitelist added for localhost:
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost:8081',
+)
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
@@ -74,12 +85,13 @@ WSGI_APPLICATION = "myproject.wsgi.application"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+    'default': {
+        'ENGINE': 'djongo',
+        'NAME': 'coffee',
+        'HOST': '127.0.0.1',
+        'PORT': 27017,
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators

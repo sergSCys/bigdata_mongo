@@ -15,3 +15,10 @@ django-admin startproject myproject
 -- installation du Django Rest Framework:
 pip install djangorestframework
 
+-- Install du commecteur Mongo db:
+pip install djongo
+
+-- Install du CORS 
+ pip install django-cors-headers
+
+-- 
